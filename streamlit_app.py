@@ -50,6 +50,7 @@ try:
 
 # write your own comment -what does the next line do? 
 
+import streamlit
 streamlit.stop()
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
