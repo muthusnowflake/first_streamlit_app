@@ -44,14 +44,3 @@ try:
         back_from_function = get_fruityvice_data(fruit_choice)
         streamlit.dataframe(back_from_function)
         streamlit.write('The user entered ', fruit_choice)
-
-#import requests
-#streamlit.text(fruityvice_response.json())
-
-# write your own comment -what does the next line do? 
-
-#import streamlit
-#streamlit.stop()
-# write your own comment - what does this do?
-#streamlit.dataframe(fruityvice_normalized)
-#dont execute past this till we troubleshoot
