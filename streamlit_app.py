@@ -43,9 +43,8 @@ try:
     else:
         back_from_function = get_fruityvice_data(fruit_choice)
         streamlit.dataframe(back_from_function)
-        #streamlit.write('The user entered ', fruit_choice)
+        streamlit.write('The user entered ', fruit_choice)
 
-import requests
 #import requests
 #streamlit.text(fruityvice_response.json())
 
@@ -73,5 +72,6 @@ streamlit.text("The fruit load contains")
 #streamlit.dataframe (my_data_row)
 streamlit.dataframe(my_data_rows)
 fruit_choice1 = streamlit.text_input('What fruit would you like to add?','Kiwi')
-streamlit.write('The user entered ', fruit_choice1)
+streamlit.write('
+                ', fruit_choice1)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
