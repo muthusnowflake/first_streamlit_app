@@ -50,10 +50,11 @@ try:
 
 # write your own comment -what does the next line do? 
 
+streamlit.stop()
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
 #dont execute past this till we troubleshoot
-#streamlit.stop()
+
 
 import snowflake.connector
 
