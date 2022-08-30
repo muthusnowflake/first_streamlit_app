@@ -10,7 +10,7 @@ streamlit.title('My Parents new Healthy Diner')
 streamlit.header('Breakfast Menu')
 streamlit.text('🥣 Omega 3 and Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
-@@ -15,34 +24,16 @@
+
 #Display the table on the page
 #streamlit.dataframe(my_fruit_list)
 streamlit.dataframe(fruits_to_show)
