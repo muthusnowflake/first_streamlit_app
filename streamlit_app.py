@@ -1,4 +1,3 @@
- -1,57 +1,51 @@
 #Streamlit Python Library has been imported
 
 import streamlit
