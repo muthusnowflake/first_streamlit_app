@@ -55,25 +55,3 @@ try:
 # write your own comment - what does this do?
 #streamlit.dataframe(fruityvice_normalized)
 #dont execute past this till we troubleshoot
-
-
-import snowflake.connector
-
-
-#import snowflake.connector
-
-my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
-my_cur = my_cnx.cursor()
-#my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
-my_cur.execute("SELECT * from FRUIT_LOAD_LIST")
-#my_data_row = my_cur.fetchone()
-my_data_rows = my_cur.fetchall()
-#streamlit.text("Hello from Snowflake:")
-streamlit.text("The fruit load contains")
-#streamlit.text(my_data_row)
-#streamlit.dataframe (my_data_row)
-streamlit.dataframe(my_data_rows)
-fruit_choice1 = streamlit.text_input('What fruit would you like to add?','Kiwi')
-streamlit.write('
-                ', fruit_choice1)
-my_cur.execute("insert into fruit_load_list values ('from streamlit')")
