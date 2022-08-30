@@ -48,7 +48,6 @@ try:
 
 
 #dont execute past this till we troubleshoot
-import streamlit
 streamlit.stop()
 
 #import snowflake.connector
