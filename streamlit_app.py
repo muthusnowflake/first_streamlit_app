@@ -53,7 +53,7 @@ try:
 #import streamlit
 #streamlit.stop()
 # write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
+#streamlit.dataframe(fruityvice_normalized)
 #dont execute past this till we troubleshoot
 
 
